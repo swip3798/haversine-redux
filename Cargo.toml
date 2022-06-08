@@ -2,6 +2,14 @@
 name = "haversine-redux"
 version = "0.1.0"
 edition = "2018"
+authors = ["Christian Schweigel"]
+description = "Haversine formular library to determine the distances between two coordinates on the earth"
+repository = "https://github.com/swip3798/haversine-redux"
+keywords = ["haversine", "geolocation", "no-std"]
+categories = ["mathematics"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+exclude = ["./examples", "./github"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
