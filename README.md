@@ -1,5 +1,10 @@
 # Haversine Formular in Rust
 
+[![Documentation](https://docs.rs/haversine-redux/badge.svg)](https://docs.rs/haversine-redux)
+[![Crates.io](https://img.shields.io/crates/v/haversine-redux.svg)](https://crates.io/crates/haversine-redux)
+[![License](https://img.shields.io/crates/l/haversine-redux.svg)](https://github.com/fltk-rs/fltk-rs/blob/master/LICENSE)
+[![Build](https://github.com/swip3798/haversine-redux/workflows/Rust/badge.svg?branch=master)](https://github.com/swip3798/haversine-redux/actions)
+
 This is a small library to implement the haversine formular in rust. There is already an haversine crate out there (you can find it [here](https://crates.io/crates/haversine)), but that library hasn't been updated since 2015 and because of that, it has some issues, especially the missing documentation and a little bit tedious and inefficient API. 
 
 Because of that, here's a rewrite, with a more intuitive interface and optional support for `#![no_std]`.
