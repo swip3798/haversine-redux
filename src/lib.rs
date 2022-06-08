@@ -9,7 +9,7 @@ use math::{atan2, cos, sin, sqrt};
 #[cfg(feature = "no_std")]
 use libm::{atan2, cos, sin, sqrt};
 
-fn square(x: f64) -> f64 {
+fn squared(x: f64) -> f64 {
     x * x
 }
 
@@ -75,7 +75,7 @@ impl Location {
         let lat2: f64 = other.latitude * PI / 180.0;
 
         let a: f64 =
-            square(sin(d_lat / 2.0)) + square(sin(d_lon / 2.0)) * (cos(lat1)) * (cos(lat2));
+            squared(sin(d_lat / 2.0)) + squared(sin(d_lon / 2.0)) * (cos(lat1)) * (cos(lat2));
         let c: f64 = 2.0 * atan2(sqrt(a), sqrt(1.0 - a));
 
         r * c
