@@ -33,3 +33,6 @@ To enable no_std support, just add the `no_std` feature to the haversine-redux d
 haversine-redux = {version = "0.1", features = ["no_std"]}
 ```
 This will load the dependency [libm](https://crates.io/crates/libm) for the implementations of mathematical functions like sin, cos or atan2.
+
+## Licensing
+This library is dual-licensed under the MIT and the Apache 2.0 License.
