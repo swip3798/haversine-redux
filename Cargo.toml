@@ -1,6 +1,6 @@
 [package]
 name = "haversine-redux"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2018"
 authors = ["Christian Schweigel"]
 description = "Haversine formular library to determine the distances between two coordinates on the earth"
