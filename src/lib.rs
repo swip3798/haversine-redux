@@ -24,6 +24,7 @@ const PI: f64 = 3.14159265358979323846264338327950288f64;
 pub enum Unit {
     Kilometer,
     Mile,
+    CustomSphere(f64),
 }
 
 impl Unit {
@@ -31,6 +32,7 @@ impl Unit {
         match self {
             Unit::Kilometer => KILOMETERS,
             Unit::Mile => MILES,
+            Unit::CustomSphere(r) => *r,
         }
     }
 }

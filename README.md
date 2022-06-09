@@ -15,7 +15,7 @@ Add haversine-redux as a dependency to your project Cargo.toml file:
 
 ```toml
 [dependencies]
-haversine-redux = "0.1"
+haversine-redux = "0.2"
 ```
 
 Example usage:
@@ -26,8 +26,18 @@ fn main() {
     let start = Location::new(38.898556, -77.037852);
     let end = Location::new(38.897147, -77.043934);
     
+    // Kilometers
     let km = start.distance_to(&end, Unit::Kilometer);
+    // OR
+    let km = start.kilometers_to(&end);
+
+    // Miles
     let miles = start.distance_to(&end, Unit::Mile);
+    // OR
+    let miles = start.miles_to(&end);
+
+    // To use the haversine formular with a custom sphere which is not the earth use the CustomSphere unit and add the radius
+    let custom = start.distance_to(&end, Unit::CustomSphere(50.0));
 }
 ```
 
@@ -35,7 +45,7 @@ fn main() {
 To enable no_std support, just add the `no_std` feature to the haversine-redux dependency:
 ```toml
 [dependencies]
-haversine-redux = {version = "0.1", features = ["no_std"]}
+haversine-redux = {version = "0.2", features = ["no_std"]}
 ```
 This will load the dependency [libm](https://crates.io/crates/libm) for the implementations of mathematical functions like sin, cos or atan2.
 
